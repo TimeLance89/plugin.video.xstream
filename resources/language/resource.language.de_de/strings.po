@@ -1230,7 +1230,7 @@ msgid "HD-Filme"
 msgstr ""
 
 msgctxt "#30705"
-msgid ""
+msgid "Filmkiste"
 msgstr ""
 
 msgctxt "#30706"
@@ -1354,3 +1354,27 @@ msgstr "Musikfilm"
 msgctxt "#30806"
 msgid "SciFi film"
 msgstr "Science Fiction"
+
+msgctxt "#30807"
+msgid "Kino"
+msgstr "Kino"
+
+msgctxt "#30808"
+msgid "Abenteuer"
+msgstr "Abenteuer"
+
+msgctxt "#30809"
+msgid "Kriegsfilm"
+msgstr "Kriegsfilm"
+
+msgctxt "#30810"
+msgid "Krimi"
+msgstr "Krimi"
+
+msgctxt "#30811"
+msgid "Thriller"
+msgstr "Thriller"
+
+msgctxt "#30811"
+msgid "Western"
+msgstr "Western"
