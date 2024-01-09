@@ -45,6 +45,12 @@ URL_KOMOEDIE = URL_MAIN + 'api/v1/channel/komoedien-filme?channelType=channel&re
 URL_LOVE = URL_MAIN + 'api/v1/channel/gefuehlskino-herzklopfen-inklusive?channelType=channel&restriction=&paginate=simple'
 URL_MUSIC = URL_MAIN + 'api/v1/channel/musik?channelType=channel&restriction=&paginate=simple'
 URL_SCIFI = URL_MAIN + 'api/v1/channel/kosmische-erzaehlungen?channelType=channel&restriction=&paginate=simple'
+URL_KINO = URL_MAIN + 'api/v1/channel/kino-filme-banner?channelType=channel&restriction=&paginate=simple'
+URL_ABENTEUER = URL_MAIN + 'api/v1/channel/abenteuer?channelType=channel&restriction=&paginate=simple'
+URL_KRIEGSFILM = URL_MAIN + 'api/v1/channel/kriegsfilm?channelType=channel&restriction=&paginate=simple'
+URL_KRIMI = URL_MAIN + 'api/v1/channel/krimi?channelType=channel&restriction=&paginate=simple'
+URL_THRILLER = URL_MAIN + 'api/v1/channel/thriller?channelType=channel&restriction=&paginate=simple'
+URL_WESTERN = URL_MAIN + 'api/v1/channel/western?channelType=channel&restriction=&paginate=simple'
 # Hoster
 URL_HOSTER = URL_MAIN + 'api/v1/titles/%s?load=images,genres,productionCountries,keywords,videos,primaryVideo,seasons,compactCredits'
 
@@ -95,6 +101,18 @@ def showGenre():
     cGui().addFolder(cGuiElement(cConfig().getLocalizedString(30805), SITE_IDENTIFIER, 'showEntries'), params)  # Music
     params.setParam('sUrl', URL_SCIFI)
     cGui().addFolder(cGuiElement(cConfig().getLocalizedString(30806), SITE_IDENTIFIER, 'showEntries'), params)  # SciFi
+    params.setParam('sUrl', URL_KINO)
+    cGui().addFolder(cGuiElement(cConfig().getLocalizedString(30807), SITE_IDENTIFIER, 'showEntries'), params)  # Kino
+    params.setParam('sUrl', URL_ABENTEUER)
+    cGui().addFolder(cGuiElement(cConfig().getLocalizedString(30808), SITE_IDENTIFIER, 'showEntries'), params)  # Abenteuer
+    params.setParam('sUrl', URL_KRIEGSFILM)
+    cGui().addFolder(cGuiElement(cConfig().getLocalizedString(30809), SITE_IDENTIFIER, 'showEntries'), params)  # Kriegsfilm
+    params.setParam('sUrl', URL_KRIMI)
+    cGui().addFolder(cGuiElement(cConfig().getLocalizedString(30810), SITE_IDENTIFIER, 'showEntries'), params)  # Krimi
+    params.setParam('sUrl', URL_THRILLER)
+    cGui().addFolder(cGuiElement(cConfig().getLocalizedString(30811), SITE_IDENTIFIER, 'showEntries'), params)  # Thriller
+    params.setParam('sUrl', URL_WESTERN)
+    cGui().addFolder(cGuiElement(cConfig().getLocalizedString(30812), SITE_IDENTIFIER, 'showEntries'), params)  # Western
     cGui().setEndOfDirectory()
 
 def showEntries(entryUrl=False, sGui=False):
